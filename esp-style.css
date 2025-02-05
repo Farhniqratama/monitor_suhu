@@ -1,0 +1,111 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Style */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 2rem;
+}
+
+/* Responsive Width */
+@media screen and (max-width: 800px) {
+  body {
+    width: 95%;
+  }
+}
+
+/* Header */
+.header {
+  background-color: #ffffff;
+  border-bottom: 2px solid #e0e0e0;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #333;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+/* Content Section */
+.content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+/* Responsive Flex Direction */
+@media screen and (max-width: 500px) {
+  .content {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Semi-Circle Gauge */
+.mask {
+  position: relative;
+  display: inline-block;
+  width: 150px;
+  height: 75px;
+  margin: 1.5rem;
+}
+
+.semi-circle {
+  background: linear-gradient(to right, #3498db, #05b027, #f1c40f, #c0392b);
+  border-radius: 100% 100% 0 0;
+  width: 100%;
+  height: 100%;
+}
+
+.semi-circle::before {
+  background: #ffffff;
+}
+
+.semi-circle--mask {
+  transform: rotate(120deg);
+}
+
+.semi-circle--mask::before {
+  background: #f9f9f9;
+}
+
+/* Table Styling */
+#tableReadings {
+  width: 100%;
+  margin-top: 2rem;
+  border-collapse: collapse;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#tableReadings th,
+#tableReadings td {
+  padding: 12px;
+  text-align: center;
+}
+
+#tableReadings th {
+  background-color: #2f4468;
+  color: white;
+  font-weight: bold;
+}
+
+#tableReadings tr:nth-child(even) {
+  background-color: #f4f4f4;
+}
+
+#tableReadings tr:hover {
+  background-color: #e0e0e0;
+}
