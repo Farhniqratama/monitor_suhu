@@ -12,7 +12,7 @@
 $servername = "localhost";
 
 // REPLACE with your Database name
-$dbname = "db_esp";
+$dbname = "espdatabase";
 // REPLACE with Database user
 $username = "root";
 // REPLACE with Database user password
